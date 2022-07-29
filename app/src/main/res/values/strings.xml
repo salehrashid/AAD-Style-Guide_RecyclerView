@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RecyclerView</string>
+    <string name="btn_first_recycler_view">First Recycler View</string>
+    <string name="btn_second_recycler_view">Second Recycler View</string>
+    <string name="btn_third_recycler_view">Third Recycler View</string>
+
+    <string-array name="animalList">
+        <item>kucing</item>
+        <item>kadal</item>
+        <item>ikan</item>
+        <item>macan</item>
+        <item>harimau</item>
+        <item>burung</item>
+        <item>onta</item>
+        <item>bebek</item>
+        <item>babi</item>
+        <item>anjing</item>
+    </string-array>
+</resources>
