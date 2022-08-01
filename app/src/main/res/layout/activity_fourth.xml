@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".first_recyclerview.FirstActivity">
+    tools:context=".fourth_recyclerview.FourthActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+        android:id="@+id/rv_list_pahlawan"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/row_animal_item" />
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row_pahlawan_json_item"/>
 
 </FrameLayout>

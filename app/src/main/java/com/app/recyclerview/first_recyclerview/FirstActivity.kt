@@ -2,9 +2,7 @@ package com.app.recyclerview.first_recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.app.recyclerview.R
 import com.app.recyclerview.databinding.ActivityFirstBinding
-import com.app.recyclerview.databinding.AnimalItemBinding
 
 class FirstActivity : AppCompatActivity() {
 

@@ -3,12 +3,12 @@ package com.app.recyclerview.second_recyclerview
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.app.recyclerview.databinding.VehicleItemBinding
+import com.app.recyclerview.databinding.RowVehicleItemBinding
 import com.app.recyclerview.second_recyclerview.data.Vehicle
 
 class VehicleAdapter(private val vehicleList: List<Vehicle>) :
     RecyclerView.Adapter<VehicleAdapter.VehicleViewHolder>() {
-    inner class VehicleViewHolder(private val itemBinding: VehicleItemBinding) :
+    inner class VehicleViewHolder(private val itemBinding: RowVehicleItemBinding) :
         RecyclerView.ViewHolder(itemBinding.root) {
         fun bind(item: Vehicle) {
             itemBinding.nameItem.text = item.name
@@ -18,7 +18,7 @@ class VehicleAdapter(private val vehicleList: List<Vehicle>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VehicleViewHolder {
         val itemBinding =
-            VehicleItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            RowVehicleItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return VehicleViewHolder(itemBinding)
     }
 

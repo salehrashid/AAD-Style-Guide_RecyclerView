@@ -3,6 +3,7 @@
     <string name="btn_first_recycler_view">First Recycler View</string>
     <string name="btn_second_recycler_view">Second Recycler View</string>
     <string name="btn_third_recycler_view">Third Recycler View</string>
+    <string name="btn_fourth_recycler_view">Fourth Recycler View</string>
 
     <string-array name="animalList">
         <item>kucing</item>

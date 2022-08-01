@@ -3,11 +3,12 @@ package com.app.recyclerview.first_recyclerview
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.app.recyclerview.databinding.AnimalItemBinding
+import com.app.recyclerview.databinding.RowAnimalItemBinding
+
 
 class AnimalAdapter(private val animalList: Array<String>) :
     RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
-    inner class AnimalViewHolder(private val itemBinding: AnimalItemBinding) :
+    inner class AnimalViewHolder(private val itemBinding: RowAnimalItemBinding) :
         RecyclerView.ViewHolder(itemBinding.root) {
         fun bind(word: String) {
             itemBinding.animalText.text = word
@@ -15,7 +16,7 @@ class AnimalAdapter(private val animalList: Array<String>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnimalViewHolder {
-        val itemBinding = AnimalItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val itemBinding = RowAnimalItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return AnimalViewHolder(itemBinding)
     }
 
