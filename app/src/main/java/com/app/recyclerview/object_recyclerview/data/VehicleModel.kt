@@ -1,4 +1,4 @@
-package com.app.recyclerview.second_recyclerview.data
+package com.app.recyclerview.object_recyclerview.data
 
 import com.app.recyclerview.R
 

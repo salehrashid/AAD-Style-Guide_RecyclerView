@@ -1,4 +1,4 @@
-package com.app.recyclerview.first_recyclerview
+package com.app.recyclerview.string_recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

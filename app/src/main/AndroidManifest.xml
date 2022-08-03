@@ -12,16 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerView">
         <activity
-            android:name=".third_recyclerview.ThirdActivity"
+            android:name=".api_recyclerview.ThirdActivity"
             android:exported="false" />
         <activity
-            android:name=".second_recyclerview.SecondActivity"
+            android:name=".object_recyclerview.SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".first_recyclerview.FirstActivity"
+            android:name=".string_recyclerview.FirstActivity"
             android:exported="false" />
         <activity
-            android:name=".fourth_recyclerview.FourthActivity"
+            android:name=".json_recyclerview.FourthActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

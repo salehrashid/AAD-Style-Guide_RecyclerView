@@ -1,10 +1,9 @@
-package com.app.recyclerview.first_recyclerview
+package com.app.recyclerview.string_recyclerview
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app.recyclerview.databinding.RowAnimalItemBinding
-
 
 class AnimalAdapter(private val animalList: Array<String>) :
     RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
@@ -16,7 +15,8 @@ class AnimalAdapter(private val animalList: Array<String>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnimalViewHolder {
-        val itemBinding = RowAnimalItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val itemBinding =
+            RowAnimalItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return AnimalViewHolder(itemBinding)
     }
 

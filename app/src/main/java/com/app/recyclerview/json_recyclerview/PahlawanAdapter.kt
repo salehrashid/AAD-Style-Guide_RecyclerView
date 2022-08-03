@@ -1,4 +1,4 @@
-package com.app.recyclerview.fourth_recyclerview
+package com.app.recyclerview.json_recyclerview
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,13 +6,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.app.recyclerview.databinding.RowPahlawanJsonItemBinding
 import com.bumptech.glide.Glide
 
-
-class PahlawanAdapter(val listPahlawan: MutableList<ModelPahlawan>) :
+class PahlawanAdapter(private val   listPahlawan: MutableList<ModelPahlawan>) :
     RecyclerView.Adapter<PahlawanAdapter.PahlawanViewHolder>() {
     inner class PahlawanViewHolder(val itemPahlawan: RowPahlawanJsonItemBinding) :
-        RecyclerView.ViewHolder(itemPahlawan.root) {
-
-    }
+        RecyclerView.ViewHolder(itemPahlawan.root)
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -32,5 +29,4 @@ class PahlawanAdapter(val listPahlawan: MutableList<ModelPahlawan>) :
     }
 
     override fun getItemCount() = listPahlawan.size
-
 }

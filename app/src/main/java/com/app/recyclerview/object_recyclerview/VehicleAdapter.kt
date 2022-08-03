@@ -1,10 +1,10 @@
-package com.app.recyclerview.second_recyclerview
+package com.app.recyclerview.object_recyclerview
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app.recyclerview.databinding.RowVehicleItemBinding
-import com.app.recyclerview.second_recyclerview.data.Vehicle
+import com.app.recyclerview.object_recyclerview.data.Vehicle
 
 class VehicleAdapter(private val vehicleList: List<Vehicle>) :
     RecyclerView.Adapter<VehicleAdapter.VehicleViewHolder>() {

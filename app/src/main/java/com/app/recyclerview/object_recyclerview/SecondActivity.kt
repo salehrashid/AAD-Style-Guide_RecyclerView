@@ -1,10 +1,10 @@
-package com.app.recyclerview.second_recyclerview
+package com.app.recyclerview.object_recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.recyclerview.databinding.ActivitySecondBinding
-import com.app.recyclerview.second_recyclerview.data.VehicleModel
+import com.app.recyclerview.object_recyclerview.data.VehicleModel
 
 class SecondActivity : AppCompatActivity() {
 

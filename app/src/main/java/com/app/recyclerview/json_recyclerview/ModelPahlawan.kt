@@ -1,4 +1,4 @@
-package com.app.recyclerview.fourth_recyclerview
+package com.app.recyclerview.json_recyclerview
 
 class ModelPahlawan {
     lateinit var nama: String
