@@ -8,7 +8,6 @@ import com.app.recyclerview.databinding.ActivityFourthBinding
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.IOException
-import java.nio.charset.StandardCharsets
 
 class FourthActivity : AppCompatActivity() {
 
@@ -21,6 +20,9 @@ class FourthActivity : AppCompatActivity() {
         binding = ActivityFourthBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        pahlawanAdapter = PahlawanAdapter(modelPahlawan)
+        binding.rvListPahlawan.adapter = pahlawanAdapter
+
         binding.rvListPahlawan.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(this@FourthActivity)
@@ -28,6 +30,7 @@ class FourthActivity : AppCompatActivity() {
         getListPahlawan()
     }
 
+    /** get object JSON **/
     private fun getListPahlawan() {
         try {
             val jsonObject = JSONObject(getJSONObject())
@@ -42,8 +45,6 @@ class FourthActivity : AppCompatActivity() {
                 dataApi.image = jsonObjectData.getString("img")
                 modelPahlawan.add(dataApi)
             }
-            pahlawanAdapter = PahlawanAdapter(modelPahlawan)
-            binding.rvListPahlawan.adapter = pahlawanAdapter
         } catch (e: JSONException) {
             e.printStackTrace()
         }

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_fifth.xml" value="0.2785923753665689" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/activity_fourth.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35052083333333334" />
@@ -11,6 +12,7 @@
         <entry key="app/src/main/res/layout/animal_item.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/cars_item.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/data_api_item.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/row_animal_item.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/row_cake_item.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/row_data_api_item.xml" value="0.33" />
         <entry key="app/src/main/res/layout/row_data_json_item.xml" value="0.35052083333333334" />

@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.app.recyclerview.databinding.RowPahlawanJsonItemBinding
 import com.bumptech.glide.Glide
 
-class PahlawanAdapter(private val   listPahlawan: MutableList<ModelPahlawan>) :
+class PahlawanAdapter(private val listPahlawan: MutableList<ModelPahlawan>) :
     RecyclerView.Adapter<PahlawanAdapter.PahlawanViewHolder>() {
     inner class PahlawanViewHolder(val itemPahlawan: RowPahlawanJsonItemBinding) :
         RecyclerView.ViewHolder(itemPahlawan.root)

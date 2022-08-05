@@ -8,6 +8,7 @@ import com.app.recyclerview.string_recyclerview.FirstActivity
 import com.app.recyclerview.json_recyclerview.FourthActivity
 import com.app.recyclerview.object_recyclerview.SecondActivity
 import com.app.recyclerview.api_recyclerview.ThirdActivity
+import com.app.recyclerview.custom_json_recyclerview.FifthActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +36,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.fourthRecyclerView.setOnClickListener {
             val intent = (Intent(this, FourthActivity::class.java))
+            startActivity(intent)
+        }
+
+        binding.fifthRecyclerView.setOnClickListener {
+            val intent = (Intent(this, FifthActivity::class.java))
             startActivity(intent)
         }
     }
