@@ -30,33 +30,39 @@ class FourthActivity : AppCompatActivity() {
 
     private fun getListPahlawan() {
         try {
-            //membuka asset json
-            val stream = assets.open("pahlawan_nasional.json")
-            val size = stream.available()
-            val buffer = ByteArray(size)
-            stream.read(buffer)
-            stream.close()
-            val strContent = String(buffer, StandardCharsets.UTF_8)
-            try {
-                val jsonObject = JSONObject(strContent)
-                val jsonArray = jsonObject.getJSONArray("daftar_pahlawan")
+            val jsonObject = JSONObject(getJSONObject())
+            val jsonArray = jsonObject.getJSONArray("daftar_pahlawan")
 
-                //intinya for (looping) untuk mengambil data yang berada dalam json
-                for (i in 0 until jsonArray.length()) {
-                    val jsonObjectData = jsonArray.getJSONObject(i)
-                    val dataApi = ModelPahlawan()
-                    dataApi.nama = jsonObjectData.getString("nama")
-                    dataApi.namaLengkap = jsonObjectData.getString("nama2")
-                    dataApi.image = jsonObjectData.getString("img")
-                    modelPahlawan.add(dataApi)
-                }
-                pahlawanAdapter = PahlawanAdapter(modelPahlawan)
-                binding.rvListPahlawan.adapter = pahlawanAdapter
-            } catch (e: JSONException){
-                e.printStackTrace()
+            //intinya for (looping) untuk mengambil data yang berada dalam json
+            for (i in 0 until jsonArray.length()) {
+                val jsonObjectData = jsonArray.getJSONObject(i)
+                val dataApi = ModelPahlawan()
+                dataApi.nama = jsonObjectData.getString("nama")
+                dataApi.namaLengkap = jsonObjectData.getString("nama2")
+                dataApi.image = jsonObjectData.getString("img")
+                modelPahlawan.add(dataApi)
             }
-        } catch (e: IOException) {
-            Toast.makeText(this,"Did not get data", Toast.LENGTH_SHORT).show()
+            pahlawanAdapter = PahlawanAdapter(modelPahlawan)
+            binding.rvListPahlawan.adapter = pahlawanAdapter
+        } catch (e: JSONException) {
+            e.printStackTrace()
         }
+    }
+
+    fun getJSONObject(): String? {
+        val str: String
+        try {
+            //membuka asset json
+            str = assets.open("pahlawan_nasional.json").bufferedReader().readText()
+//            val size = stream.available()
+//            val buffer = ByteArray(size)
+//            stream.read(buffer)
+//            stream.close()
+//            str = String(buffer, StandardCharsets.UTF_8)
+        } catch (e: IOException) {
+            Toast.makeText(this, "Did not get data", Toast.LENGTH_SHORT).show()
+            return null
+        }
+        return str
     }
 }
