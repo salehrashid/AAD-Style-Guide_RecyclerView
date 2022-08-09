@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/activity_fourth.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/activity_third.xml" value="0.25806451612903225" />
         <entry key="app/src/main/res/layout/animal_item.xml" value="0.35052083333333334" />
@@ -15,6 +16,7 @@
         <entry key="app/src/main/res/layout/row_animal_item.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/row_cake_item.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/row_data_api_item.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/row_data_api_item2.xml" value="1.1" />
         <entry key="app/src/main/res/layout/row_data_json_item.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/row_pahlawan_json_item.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/row_vehicle_item.xml" value="0.35052083333333334" />

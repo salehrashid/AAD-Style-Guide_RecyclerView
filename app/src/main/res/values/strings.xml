@@ -5,6 +5,7 @@
     <string name="btn_third_recycler_view">Third Recycler View</string>
     <string name="btn_fourth_recycler_view">Fourth Recycler View</string>
     <string name="btn_fifth_recycler_view">Fifth Recycler View</string>
+    <string name="btn_sixth_recycler_view">Sixth Recycler View</string>
 
     <string-array name="animalList">
         <item>kucing</item>
@@ -16,6 +17,6 @@
         <item>onta</item>
         <item>bebek</item>
         <item>babi</item>
-        <item>anjing</item>
+        <item>anying</item>
     </string-array>
 </resources>
